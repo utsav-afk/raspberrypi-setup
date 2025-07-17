@@ -35,12 +35,13 @@ Flash the Operating System
 4.Take the SD card out and insert it again
 - create "SSH" file and make sure it is saved as all file not text file(.txt)
 -create "wpa_supplicant.conf" and make sure it is also saved as all file. Inside this file paste following:
-      country=US
+
+   country=NP
       ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
        update_config=1
 
     network={
-       scan_ssid=1
+         scan_ssid=1
        ssid="your_wifi_ssid"
        psk="your_wifi_password"
        }
